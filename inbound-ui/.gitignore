@@ -20,7 +20,6 @@ yarn-error.log
 .idea
 .idea/w1rkspace.xm
 yarn.lock
-package-lock.json
 *bak
 .vscode
 
