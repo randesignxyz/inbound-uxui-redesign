@@ -39,23 +39,12 @@ export default () => {
   useEffect(() => {
     if (initialState?.currentUser) {
       const redirect = searchParams.get('path');
-      if (redirect == '/') {
-        if (access.canAccessTaskListMenu) {
-          history.push('/task-list');
-        } else if (access.canAccessCrmMenuItem) {
-          history.push('/crm');
-        } else if (access.canAccessProMenuItem) {
-          history.push('/pro');
-        } else if (access.canAccesDeliveyMenu) {
-          history.push('/delivery');
-        } else if (access.canAccessDeliveryExpenseMenu) {
-          history.push('/expense/delivery');
-        } else if (access.canAccessFleetMenu) {
-          history.push('/fleet');
-        }
-        return;
-      }
-      history.push(`${redirect}`);
+      const inboundPath =
+        access.canAccessInboundProcurement && !access.canAccessUpcomingInboundOperationsMenuItem
+          ? '/prod/inventory-inbound/procurement/list'
+          : '/prod/inventory-inbound/list';
+      const isInboundPath = redirect?.startsWith('/prod/inventory-inbound/');
+      history.replace(isInboundPath ? redirect! : inboundPath);
     }
   }, [initialState?.currentUser]);
 

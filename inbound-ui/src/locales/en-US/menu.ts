@@ -149,7 +149,7 @@ export default {
   'menu.product': 'Product',
   'menu.report': 'Report',
   'menu.dms': 'DMS',
-  'menu.prod': 'PROD',
+  'menu.prod': 'Inventory Inbound',
   'menu.upcomingInbound': 'Upcoming Inbound',
   'menu.dailyWaterTreatment': 'Daily Water Treatment',
   'menu.dailyPreWaterTreatment': 'Daily Pre-Water Treatment',

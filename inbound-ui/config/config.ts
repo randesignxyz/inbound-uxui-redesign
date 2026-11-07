@@ -10,15 +10,15 @@ const API_SERVER = '/path/to/api/server';
 
 export default defineConfig({
   /**
-   * @name 
+   * @name
    * @description
    * @doc https://umijs.org/docs/api/config#hash
    */
   hash: true,
 
   /**
-   * @name 
-   * @description 
+   * @name
+   * @description
    * @doc https://umijs.org/docs/api/config#targets
    */
   // targets: {
@@ -26,14 +26,14 @@ export default defineConfig({
   // },
   /**
    * @name
-   * @description  path，component，routes，redirect，wrappers，title 
+   * @description  path，component，routes，redirect，wrappers，title
    * @doc https://umijs.org/docs/guides/routes
    */
   // umi routes: https://umijs.org/docs/routing
   routes,
   /**
-   * @name 
-   * @description 
+   * @name
+   * @description
    * @doc  https://ant.design/docs/react/customize-theme-cn
    * @doc umi theme  https://umijs.org/docs/api/config#theme
    */
@@ -41,8 +41,8 @@ export default defineConfig({
     'root-entry-name': 'variable',
   },
   /**
-   * @name moment 
-   * @description 
+   * @name moment
+   * @description
    * @doc https://umijs.org/docs/api/config#ignoremomentlocale
    */
   ignoreMomentLocale: true,
@@ -65,7 +65,7 @@ export default defineConfig({
   /**
    * @doc https://umijs.org/docs/max/layout-menu
    */
-  title: 'Centralized workspace',
+  title: 'Inventory Inbound',
   layout: {
     locale: true,
     ...defaultSettings,

@@ -14,7 +14,7 @@ const Settings: ProLayoutProps & {
   fixSiderbar: true,
   colorWeak: false,
   footerRender: undefined,
-  title: 'IES',
+  title: 'Inventory Inbound',
   pwa: true,
   waterMarkProps: {
 

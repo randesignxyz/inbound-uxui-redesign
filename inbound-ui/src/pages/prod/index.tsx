@@ -4,17 +4,7 @@ import { PageContainer } from '@ant-design/pro-components';
 import { useAccess } from '@umijs/max';
 export const ProdPaths = {
   prod: '/prod',
-  transferRequest: '/prod/inventory-transfer-request',
-  inventoryTransfer: '/prod/inventory-transfer',
   upcomingInbound: '/prod/inventory-inbound',
-  sparePartRequest: '/prod/spare-part-request',
-  dailyWaterTreatment: '/prod/daily-water-treatment',
-  dailyPreWaterTreatment: '/prod/daily-pre-water-treatment',
-  dailyHACCPMonitoringtOzone: '/prod/daily-haccp-monitoring-ozone',
-  dailyHACCPMonitoring: '/prod/daily-haccp-monitoring',
-  sparePartReturn: '/prod/spare-part-return',
-  sparePartWarehouse: '/prod/spare-part-warehouse',
-  sparePartApproval: '/prod/spare-part-approval',
 };
 
 export default () => {
